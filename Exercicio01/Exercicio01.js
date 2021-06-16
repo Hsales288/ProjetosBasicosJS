@@ -1,10 +1,16 @@
+/* Se houvessem outras funções que usassem os mesmos elementos declarados na função `carregar`, eles poderiam ser declarados aqui:
+ * const msg = document.getElementById(`msg`)
+ * const msg2 = document.querySelector(`#msg2`)
+ * const img = document.querySelector(`img`)
+*/
+
 function carregar() {
-    var msg = window.document.getElementById(`msg`)
-    var msg2 = window.document.getElementById(`msg2`)
-    var img = window.document.querySelector(`img`)
-    var data = new Date()
-    var hora = data.getHours()
-    var minutos = data.getMinutes()
+    const msg = document.getElementById(`msg`)
+    const msg2 = document.querySelector(`#msg2`)
+    const img = document.querySelector(`img`)
+    const data = new Date()
+    const hora = data.getHours()
+    const minutos = data.getMinutes()
     msg.innerHTML = `Agora são ${hora} horas e ${minutos} minutos`
 
     if (hora >= 0 && hora < 12) {
